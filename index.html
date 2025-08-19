@@ -1,0 +1,311 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaTech — Innovation, AI & Digital Transformation</title>
+  <meta name="description" content="Showcasing advancements in technology, AI, robotics, IoT, and digital transformation." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="/AI folder/style.css" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' viewBox='0 0 24 24' fill='%2300e5ff'%3E%3Cpath d='M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm1 14h-2v-2h2zm0-4h-2V6h2z'/%3E%3C/svg%3E" />
+
+  <!-- Preload hero video/image (optional) -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop" />
+</head>
+<body>
+
+  <!-- ===================== Preloader (Bonus) ===================== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+  </div>
+
+  <!-- ===================== Header / Nav ===================== -->
+  <header id="site-header" class="header">
+    <div class="container header__inner">
+      <a href="#" class="brand" aria-label="NovaTech Home">
+        <span class="brand__logo"><i class="fa-solid fa-atom"></i></span>
+        <span class="brand__name">NovaTech</span>
+      </a>
+
+      <nav class="nav" aria-label="Main Navigation">
+        <button id="menuToggle" class="nav__toggle" aria-expanded="false" aria-controls="navList">
+          <span class="sr-only">Toggle menu</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="navList" class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#services">Solutions</a></li>
+          <li><a class="nav__link" href="#news">News</a></li>
+          <li><a class="nav__link" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+          <li>
+            <button id="themeToggle" class="btn btn--icon" aria-label="Toggle dark mode">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== Hero ===================== -->
+  <section id="home" class="hero">
+    <!-- Background video (falls back to image via CSS) -->
+    <video class="hero__bg" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop">
+      <source src="https://cdn.coverr.co/videos/coverr-circuit-board-technology-7914/1080p.mp4" type="video/mp4" />
+    </video>
+
+    <div class="container hero__content reveal">
+      <h1 class="hero__title">Engineering the <span class="accent">Future</span></h1>
+      <p class="hero__subtitle">AI, Robotics, Cloud & IoT solutions that accelerate digital transformation.</p>
+      <div class="hero__cta">
+        <a href="#services" class="btn btn--primary"><i class="fa-solid fa-rocket"></i> Explore Solutions</a>
+        <a href="#contact" class="btn btn--ghost">Talk to an Expert</a>
+      </div>
+    </div>
+
+    <!-- Optional: hero slider controls (non-functional placeholders, can be wired up) -->
+    <div class="hero__controls">
+      <button class="hero__control" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="hero__control" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <main id="content">
+
+    <!-- ===================== About ===================== -->
+    <section id="about" class="section">
+      <div class="container grid grid--2col">
+        <div class="reveal">
+          <h2 class="section__title">About Us</h2>
+          <p class="lead">We are a research-driven technology studio delivering intelligent systems for a connected world.</p>
+          <p>Our mission is to democratize advanced technology by building scalable platforms that are secure, ethical, and human-centered.</p>
+          <ul class="values">
+            <li><i class="fa-solid fa-shield-halved"></i> Trust & Security</li>
+            <li><i class="fa-solid fa-people-group"></i> Human-Centered Design</li>
+            <li><i class="fa-solid fa-leaf"></i> Sustainable Impact</li>
+            <li><i class="fa-solid fa-microchip"></i> Continuous Innovation</li>
+          </ul>
+        </div>
+        <aside class="about__card reveal">
+          <h3 class="about__card-title"><i class="fa-solid fa-diagram-project"></i> What We Build</h3>
+          <p>From edge AI to cloud-native platforms, our solutions power startups and enterprises in healthcare, finance, and smart cities.</p>
+          <div class="stats">
+            <div class="stat"><strong>120+</strong><span>Deployments</span></div>
+            <div class="stat"><strong>30%</strong><span>Avg. ROI uplift</span></div>
+            <div class="stat"><strong>18</strong><span>Countries</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== Services / Solutions ===================== -->
+    <section id="services" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title center">Solutions</h2>
+        <p class="center section__subtitle">Modular platforms crafted with AI, robotics, cloud, and IoT.</p>
+
+        <div class="grid grid--4col">
+          <article class="card reveal">
+            <span class="card__icon"><i class="fa-solid fa-brain"></i></span>
+            <h3>Artificial Intelligence</h3>
+            <p>Predictive analytics, computer vision, NLP pipelines, and custom LLM integrations.</p>
+            <a href="#" class="card__link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon"><i class="fa-solid fa-robot"></i></span>
+            <h3>Robotics</h3>
+            <p>Autonomous systems, SLAM, and smart robotics for manufacturing & logistics.</p>
+            <a href="#" class="card__link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon"><i class="fa-solid fa-cloud-arrow-up"></i></span>
+            <h3>Cloud Computing</h3>
+            <p>Cloud-native apps, serverless, DevSecOps, and high-availability architectures.</p>
+            <a href="#" class="card__link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon"><i class="fa-solid fa-sitemap"></i></span>
+            <h3>Internet of Things</h3>
+            <p>Edge computing, device orchestration, and real-time telemetry at scale.</p>
+            <a href="#" class="card__link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== News / Blog Grid ===================== -->
+    <section id="news" class="section">
+      <div class="container">
+        <h2 class="section__title center">Latest News</h2>
+        <p class="center section__subtitle">Tech updates, engineering notes, and research highlights.</p>
+
+        <div class="grid grid--3col">
+          <article class="post reveal">
+            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1200&auto=format&fit=crop" alt="AI research" loading="lazy" />
+            <div class="post__meta">
+              <h3 class="post__title">Scaling LLMs with Efficient Retrieval</h3>
+              <p class="post__info">by Jane Doe • 7 min read</p>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1200&auto=format&fit=crop" alt="Cloud platforms" loading="lazy" />
+            <div class="post__meta">
+              <h3 class="post__title">Zero-Trust Architectures on Cloud</h3>
+              <p class="post__info">by Mark I. • 6 min read</p>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="DevOps board" loading="lazy" />
+            <div class="post__meta">
+              <h3 class="post__title">DevSecOps: Shipping Secure at Speed</h3>
+              <p class="post__info">by Sofia K. • 5 min read</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sample Blog Post Layout (Bonus) -->
+        <article class="blog-post reveal">
+          <img class="blog-post__hero" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop" alt="Featured robotics post" />
+          <header class="blog-post__header">
+            <h3>Inside Our Robotics Lab: From Prototype to Production</h3>
+            <p class="blog-post__byline">By Alex Chen • Principal Engineer • Aug 18, 2025</p>
+          </header>
+          <div class="blog-post__content">
+            <p>We break down our iterative process for building reliable autonomous systems, from simulation and digital twins to on-site validation.</p>
+            <p>Key topics include sensor fusion, safety redundancy, and deployment orchestration across heterogeneous fleets.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== Testimonials (Carousel) ===================== -->
+    <section id="testimonials" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title center">What Clients Say</h2>
+
+        <div class="carousel reveal" aria-roledescription="carousel">
+          <button class="carousel__btn prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+
+          <div class="carousel__track" id="testimonialTrack">
+            <figure class="testimonial">
+              <blockquote>“NovaTech delivered a production-ready AI pipeline in record time. Uptime and accuracy exceeded targets.”</blockquote>
+              <figcaption>— Amina R., CTO, FintechCo</figcaption>
+            </figure>
+            <figure class="testimonial">
+              <blockquote>“Their robotics team automated our sorting line with a 28% throughput increase.”</blockquote>
+              <figcaption>— David L., Ops Director, LogiWare</figcaption>
+            </figure>
+            <figure class="testimonial">
+              <blockquote>“From zero-trust to observability, their cloud platform is a fortress.”</blockquote>
+              <figcaption>— Priya K., CIO, HealthNet</figcaption>
+            </figure>
+          </div>
+
+          <button class="carousel__btn next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Contact ===================== -->
+    <section id="contact" class="section">
+      <div class="container grid grid--2col">
+        <div class="reveal">
+          <h2 class="section__title">Contact Us</h2>
+          <p class="lead">Have a project in mind? Let’s shape the roadmap together.</p>
+
+          <form id="contactForm" class="form" novalidate>
+            <div class="form__field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+              <small class="error" id="nameError"></small>
+            </div>
+
+            <div class="form__field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+              <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="form__field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us about your goals" required></textarea>
+              <small class="error" id="messageError"></small>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Send Message</button>
+            <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="map reveal" aria-label="Map">
+          <!-- Google Map Embed (replace with your address if desired) -->
+          <iframe
+            title="NovaTech HQ Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.989994808003!2d3.379205!3d6.524379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5189f5a8b7f%3A0x7d7c86f9a7ee4f4f!2sLagos%20Island!5e0!3m2!1sen!2sng!4v1698765432100"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="contact-details">
+            <p><i class="fa-solid fa-envelope"></i> hello@novatech.ai</p>
+            <p><i class="fa-solid fa-phone"></i> +234 (0) 801 234 5678</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="#">
+          <span class="brand__logo"><i class="fa-solid fa-atom"></i></span>
+          <span class="brand__name">NovaTech</span>
+        </a>
+        <p class="muted">Building secure, scalable, and human-centered technology.</p>
+      </div>
+
+      <form class="newsletter" id="newsletterForm" novalidate>
+        <label for="newsletterEmail">Subscribe to our newsletter</label>
+        <div class="newsletter__row">
+          <input type="email" id="newsletterEmail" placeholder="you@company.com" required />
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </div>
+        <small class="error" id="newsletterError"></small>
+        <p class="form__msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+      </form>
+
+      <ul class="socials">
+        <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer__bar">
+      <p>© <span id="year"></span> NovaTech. All rights reserved.</p>
+      <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/AI folder/script.js"></script>
+</body>
+</html>
